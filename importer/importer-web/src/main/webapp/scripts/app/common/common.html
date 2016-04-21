@@ -1,0 +1,36 @@
+<!-- Wrapper-->
+<div id="wrapper" ng-controller="MainController">
+
+    <!-- Navigation -->
+    <div ng-include="'scripts/app/common/navigation.html'" ng-if="isLoged()"
+         data-ng-controller="CommonController"></div>
+
+    <!-- Page wraper -->
+    <!-- ng-class with current state name give you the ability to extended customization your view -->
+    <div id="page-wrapper" class="gray-bg {{$state.current.name}}"
+         data-ng-class="{'bg-img' : !isLoged()}">
+
+        <!-- Page wrapper -->
+        <div ng-include="'scripts/app/common/topnavbar.html'"></div>
+
+        <!-- Main view  -->
+        <div ui-view></div>
+
+        <BR/>
+        <BR/>
+        <BR/>
+        <BR/>
+        <BR/>
+        <BR/>
+
+        <!-- Footer -->
+        <div ng-include="'scripts/app/common/footer.html'"></div>
+
+    </div>
+    <!-- End page wrapper-->
+
+    <!-- Right Sidebar -->
+    <div ng-include="'scripts/app/common/right_sidebar.html'"></div>
+
+</div>
+<!-- End wr

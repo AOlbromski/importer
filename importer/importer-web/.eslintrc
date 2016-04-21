@@ -1,0 +1,74 @@
+{
+  "plugins": [
+    "angular"
+  ],
+  "rules": {
+    "no-underscore-dangle": 0,
+    "strict": [
+      2,
+      "never"
+    ],
+    "no-use-before-define": [
+      0
+    ],
+    "no-console": 2,
+    "block-scoped-var": 2,
+    "no-else-return": 2,
+    "angular/ng_module_name": [
+      2,
+      "/^importer(\\..*)?$/"
+    ],
+    "angular/ng_controller_name": [
+      2,
+      "/[A-Z].*Controller$/"
+    ],
+    "angular/ng_controller_as": 0,
+    "angular/ng_controller_as_vm": 0,
+    "angular/ng_directive_name": [
+      1,
+      "^soft[A-Z]\\w*$"
+    ],
+    "angular/ng_controller_as_route": 0,
+    "angular/ng_json_functions": 0,
+    "angular/ng_definedundefined": 0,
+    "angular/ng_no_digest": 0,
+    "quotes": [
+      2,
+      "single"
+    ],
+    "indent": [
+      2,
+      4
+    ],
+    "brace-style": [
+      2,
+      "1tbs",
+      {
+        "allowSingleLine": false
+      }
+    ],
+    "comma-spacing": [
+      2,
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "no-lonely-if": 2,
+    "no-multiple-empty-lines": 1,
+    "no-nested-ternary": 2,
+    "space-after-keywords": [
+      2,
+      "always"
+    ],
+    "spaced-line-comment": [
+      1,
+      "always"
+    ]
+  },
+  "globals": {
+    "angular": true,
+    "_": true,
+    "moment": true
+  }
+}

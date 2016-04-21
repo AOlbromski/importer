@@ -1,0 +1,6 @@
+{
+  "errors": {
+    "title": "Strona błędu!",
+    "403": "Nie masz uprawnień, aby uzyskać dostęp do strony."
+  }
+}

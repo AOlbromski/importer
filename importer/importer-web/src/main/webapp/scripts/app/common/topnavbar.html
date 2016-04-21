@@ -1,0 +1,39 @@
+<div class="row border-bottom">
+    <nav class="navbar navbar-static-top" role="navigation" data-ng-class="{'nav-bg' : isLoged()}"
+         style="margin-bottom: 0;">
+        <ul class="nav navbar-top-links navbar-right">
+            <li class="dropdown" ng-controller="CommonController"
+                ng-switch="isAuthenticated()" dropdown>
+                <a class="dropdown-toggle count-info" href
+                   dropdown-toggle data-ng-class="{'white-link' : isAuthenticated()}">
+                    Account
+                </a>
+                <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                    <li ui-sref-active="active" ng-show="isAuthenticated()">
+                        <a ui-sref="profile.view">
+                            <span class="fa fa-user"></span> &#xA0; Profile
+                        </a>
+                    </li>
+                    <li ui-sref-active="active" ng-switch-when="true">
+                        <a ui-sref="password">
+                            <span class="glyphicon glyphicon-lock"></span>
+                            &#xA0;
+                            <span>Password</span>
+                        </a>
+                    </li>
+                    <li ui-sref-active="active" ng-switch-when="false"><a ui-sref="login"><span
+                            class="glyphicon glyphicon-log-in"></span>
+                        &#xA0;<span>Log in</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a ng-show="isAuthenticated()" href="" ng-controller="LogoutController"
+                   ng-click="logout()" data-ng-class="{'white-link' : isAuthenticated()}">
+                    <i class="fa fa-sign-out"></i><span>Log out</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</div>

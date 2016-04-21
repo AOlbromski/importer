@@ -1,0 +1,30 @@
+<fieldset>
+    <h2>Import prewiev</h2>
+
+    <div class="row">
+        <div  ng-show="fileContent.length === 0 || fileContent === '\r\n'">
+            <div class="alert alert-info">
+                File is empty
+            </div>
+        </div>
+        <table class="table table-hover" ng-hide="fileContent.length === 0 || fileContent === '\r\n'">
+            <thead>
+            <tr>
+                <th>Mark</th>
+                <th>Model</th>
+                <th>License plate</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="row in fileContent track by $index" ng-if="$index<10">
+                <td>{{row[0]}}</td>
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <a ui-sref="imports.new.step_one" class="btn btn-default">Previous</a>
+    <a ui-sref="imports.new.step_three" class="btn btn-primary" ng-disabled="fileContent.length === 0 || fileContent === '\r\n'">Next</a>
+</fieldset>

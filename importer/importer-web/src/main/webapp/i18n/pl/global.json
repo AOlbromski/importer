@@ -1,0 +1,83 @@
+{
+  "global": {
+    "DASHBOARD": "Strona główna",
+    "EXAMPLE": "Demonstracja",
+    "GRAPHS": "Grafy",
+    "MAILBOX": "Skrzynka pocztowa",
+    "WIDGETS": "Dodatki",
+    "FORMS": "Formularze",
+    "APPVIEWS": "Widoki aplikacji",
+    "OTHERPAGES": "Inne strony",
+    "UIELEMENTS": "Elementy UI",
+    "MISCELLANEOUS": "Różne",
+    "GRIDOPTIONS": "Opcje grid",
+    "TABLES": "Tabele",
+    "GALLERY": "Galeria",
+    "MENULEVELS": "Poziomy menu",
+    "ANIMATIONS": "Animacje",
+    "LANDING": "Strona lądowania",
+    "LAYOUTS": "Rozmieszczenia",
+    "WELCOME": "Witaj Amelia",
+    "MESSAGEINFO": "Masz 42 wiadomości i 6 powiadomień.",
+    "SEARCH": "Wyszukaj...",
+    "title": "Witaj w Demo01!",
+    "subtitle": "To jest twoja strona domowa",
+    "logged": {
+      "message": "Jesteś zalogowany jako użytkownik: \"{{username}}\"."
+    },
+    "form": {
+      "username": "PL Login",
+      "username.placeholder": "Twój login",
+      "newpassword": "Nowe hasło",
+      "newpassword.placeholder": "Nowe hasło",
+      "confirmpassword": "Potwierdź nowe hasło",
+      "confirmpassword.placeholder": "Potwierdź nowe hasło",
+      "email": "E-mail",
+      "email.placeholder": "Twój e-mail"
+    },
+    "menu": {
+      "home": "Strona główna",
+      "account": {
+        "main": "Konto",
+        "password": "Hasło",
+        "login": "Zaloguj się",
+        "logout": "Wyloguj się",
+        "register": "Zarejestruj się"
+      },
+      "language": "Język",
+      "aboutus": "O nas",
+      "support": "Wsparcie",
+      "contact": "Kontakt"
+    },
+    "messages": {
+      "info": {
+        "authenticated": "Jeżeli chcesz się zalogować <a href=\"#/login\">authenticate</a>, możesz użyć domyślnych kont:<br/>- Administrator (login=\"admin\" and password=\"admin\") <br/>- Użytkownik (login=\"user\" and password=\"user\").",
+        "register": "Nie masz jeszcze konta??",
+        "createaccount": "Utwórz konto",
+        "haveaccount": "Masz już konto?"
+      },
+      "error": {
+        "dontmatch": "Hasło i jego powtórzenie się różnią!"
+      },
+      "validate": {
+        "newpassword": {
+          "required": "Twoje hasło jest wymagane.",
+          "minlength": "Twoje hasło musi mieć co najmniej 5 znaków.",
+          "maxlength": "Twoje hasło nie może być dłuższe niż 50 znaków.",
+          "strength": "Siła hasła:"
+        },
+        "confirmpassword": {
+          "required": "Potwierdzenie hasła jest wymagane.",
+          "minlength": "Potwierdzenie hasła musi mieć co najmniej 5 znaków.",
+          "maxlength": "Potwierdzenie hasła nie może być dłuższe niż 50 znaków."
+        },
+        "email": {
+          "required": "Twój e-mail jest wymagany.",
+          "invalid": "Twój e-mail jest nieprawidłowy.",
+          "minlength": "Twój e-mail musi mieć co najmniej 5 znaków.",
+          "maxlength": "Twój e-mail może mieć maksymalnie 50 znaków."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+<div class="loginColumns animated fadeInDown">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="ibox-content">
+                <center><h1>Log in</h1></center>
+                <div class="alert alert-danger" ng-show="authenticationError"
+                     translate="login.messages.error.authentication">
+                    <strong>Authentication failed!</strong> Please check your credentials and try
+                    again.
+                </div>
+                <form class="m-t" role="form">
+                    <div class="form-group">
+                        <label for="username" translate="global.form.username">Login</label>
+                        <input type="text" class="form-control" id="username"
+                               placeholder="{{'global.form.username.placeholder' | translate}}"
+                               ng-model="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" translate="login.form.password">Password</label>
+                        <input type="password" class="form-control" id="password"
+                               placeholder="{{'login.form.password.placeholder' | translate}}"
+                               ng-model="password">
+                    </div>
+                    <div class="form-group">
+                        <label for="rememberMe">
+                            <input type="checkbox" id="rememberMe" ng-model="rememberMe" checked>
+                            {{"login.form.rememberme" | translate}}
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary block full-width m-b"
+                            ng-click="login()" translate="login.form.button">
+                        Authenticate
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $("body").addClass('fixed-sidebar');
+    $("body").addClass('mini-navbar');
+</script>
+

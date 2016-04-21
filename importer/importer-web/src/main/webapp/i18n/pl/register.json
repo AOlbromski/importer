@@ -1,0 +1,27 @@
+{
+  "register": {
+    "title": "Rejestracja",
+    "form": {
+      "button": "Zarejestruj"
+    },
+    "messages": {
+      "validate": {
+        "login": {
+          "required": "Twój login jest wymagany.",
+          "minlength": "Twój login musi mieć co najmniej jeden znak",
+          "maxlength": "Twój login nie może być dłuższy niż 50 znaków",
+          "pattern": "Twój login może tylko zawierać małe litery i cyfry"
+        },
+        "termsPolicy": {
+          "required": "Musisz zaakceptować politykę prywatności firmy"
+        }
+      },
+      "success": "<strong>Rejestracja zapisana!</strong> Proszę sprawdż pocztę aby potwierdzić konto.",
+      "error": {
+        "fail": "<strong>Rejestracja się nie powiodła!</strong> Proszę spróbuj jeszcze raz.",
+        "userexists": "<strong>Login już jest zajęty!</strong> Proszę wybierz inny.",
+        "emailexists": "<strong>E-mail jest już zajęty!</strong> Proszę wybierz inny."
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "plugins": [
+    "jasmine"
+  ],
+  "globals": {
+    "angular": true,
+    "inject": true,
+    "_": true,
+    "URI": true
+  },
+  "env": {
+    "node": true,
+    "jasmine": true
+  }
+}

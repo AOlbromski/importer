@@ -1,0 +1,43 @@
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Importy</h5>
+                    <div ibox-tools></div>
+                </div>
+                <div class="ibox-content" ng-if="rowListForView.length === 0">
+                    <div class="alert alert-info">
+                        Lack of data
+                    </div>
+                </div>
+                <div ng-if="rowListForView.length != 0" class="ibox-content" style="display: block;">
+                    <table datatable="ng" class="row-border hover">
+                        <thead>
+                        <tr>
+                            <th>Import Date</th>
+                            <th>Items Number</th>
+                            <th>Imported by</th>
+                            <th ng-if="isAuthenticated()"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="row in rowListForView">
+                                <td>{{ row.importDate }}</td>
+                                <td>{{ row.itemsNumber }}</td>
+                                <td>{{ row.importerUser }}</td>
+                                <td ng-if="isAuthenticated()">
+                                    <button class="btn btn-danger btn-circle" type="button" title="Delete" ng-click="delete(row.id)">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

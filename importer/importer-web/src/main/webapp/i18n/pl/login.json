@@ -1,0 +1,16 @@
+{
+  "login": {
+    "title": "Logowanie",
+    "form": {
+      "password": "Hasło",
+      "password.placeholder": "Wpisz hasło",
+      "rememberme": "Zapamiętaj mnie",
+      "button": "Zaloguj"
+    },
+    "messages": {
+      "error": {
+        "authentication": "<strong>Logowanie nie powiodło się!</strong> Proszę sprawdź parametry logowania i spróbuj ponownie."
+      }
+    }
+  }
+}

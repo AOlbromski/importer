@@ -1,0 +1,50 @@
+<div ng-if="isAuthenticated()" class="row  border-bottom white-bg dashboard-header">
+    <script>
+        $("body").removeClass('fixed-sidebar');
+        $("body").removeClass('mini-navbar');
+    </script>
+</div>
+<div ng-if="!isAuthenticated()" class="row">
+    <script>
+        $("body").addClass('fixed-sidebar');
+        $("body").addClass('mini-navbar');
+    </script>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Importy</h5>
+                    <div ibox-tools></div>
+                </div>
+                <div class="ibox-content" ng-if="rowListForView.length === 0" >
+                    <div class="alert alert-info">
+                        Lack of data
+                    </div>
+                </div>
+                <div  class="ibox-content" ng-if="rowListForView.length > 0" style="display: block;">
+
+                    <table datatable="ng" class="row-border hover">
+                        <thead>
+                        <tr>
+                            <th>Mark</th>
+                            <th>Model</th>
+                            <th>Licence Plate</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="row in rowListForView">
+                            <td>{{ row.mark }}</td>
+                            <td>{{ row.model }}</td>
+                            <td>{{ row.licencePlate }}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
